@@ -56,6 +56,28 @@
             </div>
         </section>
 
+        <section>
+          <div class="container-fluid azulSura2"> <!-- container-fluid: para que el contenedor quede del ancho de la pantalla -->
+            <div class="row justify-content-center"> <!-- justify-content-center: para centrar todo lo que tenemos en las columnas -->
+              <div class="col-12 col-md-4">
+                <img src="./assets/img/Tigre.png" alt="Tigre" 
+                class="img-fluid w-100">
+              </div>
+              <div class="col-12 col-md-4 text-white text-center align-self-center"> <!-- align-self-center: para centrar todo lo que tenemos en la fila (poner en la mitad) -->
+                <h2>BIENVENIDO</h2>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium modi voluptatibus, consequuntur similique consequatur necessitatibus ut iste cupiditate excepturi dolorum aspernatur non. Officiis vero excepturi ad quidem odit facere magnam!</P>
+
+                <div class="wow animate__animated animate__fadeInUp animate__slow">
+                <i class="bi bi-heart-pulse-fill fs-1 me-3"></i>
+                <i class="bi bi-people-fill fs-1 me-3"></i>
+                <i class="bi bi-person-video2 fs-1 me-3"></i>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
 
     </main>
     <footer></footer>
@@ -65,5 +87,9 @@
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./src/helpers/wow.min.js"></script> <!-- aca nos traia una ruta diferente lo que hacemos es corregirla -->
+    <script>
+      new WOW().init();
+    </script>
 </body>
 </html>
