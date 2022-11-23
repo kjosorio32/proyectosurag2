@@ -54,6 +54,7 @@
                         data-bs-target="#collapseExample">Registrar Especialista</button>
                     <div class="collapse mt-3" id="collapseExample">
                         <div class="card card-body">
+                            
                             <form>
 
                                 <h2>Registro</h2>
@@ -63,7 +64,7 @@
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1"><i
                                                     class="bi bi-person-circle"></i></span>
-                                            <input type="text" class="form-control" placeholder="Nombres Completos">
+                                            <input type="text" class="form-control" placeholder="Nombres Completos" id="nombres">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
@@ -71,7 +72,7 @@
                                             <span class="input-group-text" id="basic-addon1"><i
                                                     class="bi bi-postcard"></i></span>
                                             <input type="text" class="form-control"
-                                                placeholder="Documento de Identidad">
+                                                placeholder="Documento de Identidad" id="documento">
                                         </div>
                                     </div>
                                 </div>
@@ -146,9 +147,10 @@
                                     </div>
                                 </div>
 
-                                <button  type="submit" class="btn btn-primary w-100">Enviar</button>
+                                <button  type="submit" class="btn btn-primary w-100" id="botonenvio">Enviar</button>
 
                             </form>
+
                         </div>
                     </div>
                 </div>
@@ -163,6 +165,10 @@
     <script>
         new WOW().init();
     </script>
+
+    <script src="../controllers/Controladormedicos.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>
