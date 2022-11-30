@@ -1,5 +1,5 @@
 // IMPORTACIONES
-import { capturarDatospacientes } from "../formularios/formulariopaciente.js";
+import { capturarDatospacientes } from '../formularios/formulariopaciente.js';
 
 // etiquetas que controlo:
 // Var: "Variable Global"
