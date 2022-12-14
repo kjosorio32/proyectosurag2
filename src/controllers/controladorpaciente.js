@@ -1,11 +1,11 @@
 // IMPORTACIONES
-import { capturarDatospacientes } from '../formularios/formulariopaciente.js';
+import { capturarDatospacientes } from "../formularios/formulariopaciente.js";
 
 // etiquetas que controlo:
 // Var: "Variable Global"
 // let: "Variable Local"
 
-let etiquetaNombres = document.getElementById("nombres");
+let etiquetaNombres = document.getElementById("nombre");
 let etiquetaDocumentos = document.getElementById("documentos");
 
 let etiquetaregimen = document.getElementById("regimen");

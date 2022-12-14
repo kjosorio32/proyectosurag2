@@ -9,7 +9,8 @@ export function capturarDatospacientes(
   etiquetacuota,
   etiquetatelefono,
   etiquetacorreo
-) {
+  ){
+
   let nombrespaciente = etiquetaNombres.value;
   let documentopaciente = etiquetaDocumentos.value;
   let regimenpaciente = etiquetaregimen.value;
@@ -29,15 +30,10 @@ export function capturarDatospacientes(
     cuota: cuotapaciente,
     telefono: telefonopaciente,
     correo: correopaciente,
-  };
+  }
 
-  console.log(datosFormularioPaciente);
+  //console.log(datosFormularioPaciente);
 
-  // console.log(nombrespaciente);
-  // console.log(documentopaciente);
-  // console.log(regimenpaciente);
-  // console.log(grupopaciente);
-  // console.log(cuotapaciente);
-  // console.log(telefonopaciente);
-  // console.log(correopaciente);
+    validarFormulario(datosFormularioPaciente);
+
 }

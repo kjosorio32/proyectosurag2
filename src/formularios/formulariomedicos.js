@@ -1,7 +1,16 @@
 import { validarFormulario } from "../formularios/validacionFormularioMedico.js";
 
 // Creamos una funcion que nos permita recibir los datos del formulario
-export function capturarDatos(etiquetaNombre,etiquetaDocumento,etiquetaEspecialidad, etiquetaRegistro,etiquetacorreo,etiquetasede,etiquetaHorario,etiquetadescripcion,etiquetafoto){
+export function capturarDatos(
+    etiquetaNombre,
+    etiquetaDocumento,
+    etiquetaEspecialidad,
+    etiquetaRegistro,
+    etiquetacorreo,
+    etiquetasede,
+    etiquetaHorario,
+    etiquetadescripcion,
+    etiquetafoto){
 
     let nombresMedico=etiquetaNombre.value
     let documentoMedico=etiquetaDocumento.value
@@ -28,16 +37,8 @@ export function capturarDatos(etiquetaNombre,etiquetaDocumento,etiquetaEspeciali
         foto:fotoMedico
     }
 
-    console.log(datosFormularioMedico)
+    //console.log(datosFormularioMedico)
 
-    // console.log(nombresMedico)
-    // console.log(documentoMedico)
-    // console.log(especialidadMedico);
-    // console.log(registroMedico);
-    // console.log(correoMedico);
-    // console.log(sedeMedico);
-    // console.log(horarioMedico);
-    // console.log(descripcionMedico);
-    // console.log(fotoMedico);
+    validarFormulario(datosFormularioMedico);
 
 }
