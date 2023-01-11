@@ -5,7 +5,7 @@ export function validarFormulario(datosFormularioMedico) {
     // REFERENCIAS A ETIQUETAS QUE QUIERO VALIDAR
     let etiquetaNombre = document.getElementById("nombres");
     let etiquetaDocumento = document.getElementById("documento");
-    let etiquetaRegistro = document.getElementById("registro");
+    //let etiquetaRegistro = document.getElementById("registro");
     //let etiquetaEspecialidad = document.getElementById("especialidad");
     //let etiquetacorreo = document.getElementById("correo");
     //let etiquetasede = document.getElementById("Sede");

@@ -1,11 +1,13 @@
+
 // IMPORTACIONES
 import { capturarDatospacientes } from "../formularios/formulariopaciente.js";
+
 
 // etiquetas que controlo:
 // Var: "Variable Global"
 // let: "Variable Local"
 
-let etiquetaNombres = document.getElementById("nombre");
+let etiquetanombrepaciente = document.getElementById("nombrepaciente");
 let etiquetaDocumentos = document.getElementById("documentos");
 
 let etiquetaregimen = document.getElementById("regimen");
@@ -24,5 +26,5 @@ let etiquetaBotonpaciente = document.getElementById("botonenviopaciente");
 
 etiquetaBotonpaciente.addEventListener("click", function (evento) {
   evento.preventDefault();
-  capturarDatospacientes(etiquetaNombres,etiquetaDocumentos,etiquetaregimen,etiquetagrupo,etiquetacuota,etiquetatelefono,etiquetacorreo);
+  capturarDatospacientes(etiquetanombrepaciente,etiquetaDocumentos,etiquetaregimen,etiquetagrupo,etiquetacuota,etiquetatelefono,etiquetacorreo);
 });

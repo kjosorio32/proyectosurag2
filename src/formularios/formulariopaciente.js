@@ -1,8 +1,8 @@
-import { validarFormulariopaciente } from "../formularios/validacionFormularioPaciente";
+import { validarFormulariopaciente } from "../formularios/validacionFormularioPaciente.js";
 
 // Creamos una funcion que nos permita recibir los datos del formulario
 export function capturarDatospacientes(
-  etiquetaNombres,
+  etiquetanombrepaciente,
   etiquetaDocumentos,
   etiquetaregimen,
   etiquetagrupo,
@@ -11,7 +11,7 @@ export function capturarDatospacientes(
   etiquetacorreo
   ){
 
-  let nombrespaciente = etiquetaNombres.value;
+  let nombrepaciente = etiquetanombrepaciente.value;
   let documentopaciente = etiquetaDocumentos.value;
   let regimenpaciente = etiquetaregimen.value;
   let grupopaciente = etiquetagrupo.value;
@@ -23,7 +23,7 @@ export function capturarDatospacientes(
   // OBJETO: almacenar varios datos en 1 solo espacio de memoria
 
   let datosFormularioPaciente = {
-    nombres: nombrespaciente,
+    nombrepaciente: nombrepaciente,
     documentos: documentopaciente,
     regimen: regimenpaciente,
     grupo: grupopaciente,
@@ -34,6 +34,6 @@ export function capturarDatospacientes(
 
   //console.log(datosFormularioPaciente);
 
-    validarFormulario(datosFormularioPaciente);
+  validarFormulariopaciente(datosFormularioPaciente);
 
 }
