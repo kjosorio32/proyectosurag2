@@ -34,7 +34,7 @@ export function capturarDatos(
         Sede:sedeMedico,
         Horario:horarioMedico,
         descripcion:descripcionMedico,
-        foto:fotoMedico
+        fotografia:fotoMedico
     }
 
     //console.log(datosFormularioMedico)

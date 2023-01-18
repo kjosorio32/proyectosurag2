@@ -1,3 +1,5 @@
+import {registrarMedico} from  '../../services/registrarMedico.js'
+
 export function validarFormulario(datosFormularioMedico) {
     //console.log("Estamos Validando...");
     //console.log(datosFormularioMedico);
@@ -49,7 +51,8 @@ export function validarFormulario(datosFormularioMedico) {
             text: "Documento es Obligatorio",
         });
     }else{
-        alert("Subiendo info a BD")
+        registrarMedico(datosFormularioMedico)
+        // alert("Subiendo info a BD")
         etiquetaNombre.classList.remove("is-invalid");
         etiquetaDocumento.classList.remove("is-invalid");
     }
